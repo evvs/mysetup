@@ -51,6 +51,9 @@ module.exports = {
     filename: '[name].[hash].js',
     path: path.resolve(__dirname, 'bundle'),
   },
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
   optimization: optimization(),
   devtool: isDev ? 'source-map' : '',
   plugins: [
